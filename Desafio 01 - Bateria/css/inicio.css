@@ -29,12 +29,16 @@ body{
     width: 80px;
     height: 80px;
     border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    text-shadow: 0 0 5px black;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 10px;
-    
+    justify-content: center; 
 }
+
 .botao:hover{
     animation-name: botaom;
     animation-duration: 1s;
@@ -42,8 +46,14 @@ body{
 }
 
 .botao > kbd{
-    font-size: 1cm;
-    margin: 0 auto;
+    font-size: 1.7cm;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.sound{
+    font-size: 0.5cm;
+    padding-bottom: 5px;
 }
 
 @keyframes botaom{
@@ -60,5 +70,6 @@ body{
     100%{
         background-color: rgba(199, 27, 27, 0.849);
         border: 2px solid white;
-    }}
+    }
+}
 
