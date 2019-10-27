@@ -59,7 +59,7 @@ body{
 @keyframes botaom{
     0%{
         transform: scale(1.0);
-        background-color: rgba(119, 0, 0, 0.849);
+        background-color: rgba(2, 6, 236, 0.849);
         border: 2px solid white;
     }
     50%{
