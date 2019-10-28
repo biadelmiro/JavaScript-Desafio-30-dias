@@ -10,40 +10,40 @@
 <body>
     <div class="back">
     <div class="tudo">
-        <div class="botao">
-            <kbd data-key="65" class="key">A</kbd>
-            <span class="sound">CLAP</span>
+        <div class="key" data-key="65">
+        <kbd>A</kbd>
+        <span class="sound">CLAP</span>
         </div>
-        <div class="botao">
-            <kbd data-key="83" class="key">S</kbd>
+        <div class="key" data-key="83" >
+            <kbd>S</kbd>
             <span class="sound">HIHAT</span>
         </div>
-        <div class="botao">
-            <kbd data-key="68" class="key">D</kbd>
+        <div class="key"  data-key="68">
+            <kbd>D</kbd>
             <span class="sound">KICk</span>
         </div>
-        <div class="botao">
-            <kbd data-key="70" class="key">F</kbd>
+        <div data-key="70" class="key">
+            <kbd >F</kbd>
             <span class="sound">OPENHAT</span>
         </div>
-        <div class="botao">
-            <kbd data-key="71" class="key">G</kbd>
+        <div data-key="71" class="key">
+            <kbd >G</kbd>
             <span class="sound">BOOM</span>
         </div>
-        <div class="botao">
-            <kbd data-key="72" class="key">H</kbd>
+        <div data-key="72" class="key">
+            <kbd >H</kbd>
             <span class="sound">HIDE</span>
         </div>
-        <div class="botao">
-            <kbd data-key="74" class="key">I</kbd>
+        <div data-key="74" class="key">
+            <kbd >I</kbd>
             <span class="sound">SNARE</span>
         </div>
-        <div class="botao">
-            <kbd data-key="75" class="key">J  </kbd>
+        <div data-key="75" class="key">
+            <kbd >J  </kbd>
             <span class="sound">  TOM</span>
         </div>
-        <div class="botao">
-            <kbd data-key="76" class="key">K</kbd>
+        <div data-key="76" class="key">
+            <kbd >K</kbd>
             <span class="sound">TINK</span>
         </div>
         </div>
@@ -63,11 +63,16 @@
         window.addEventListener('keydown', function(e){
 
         var audi = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        //console.log(audi);
+        var key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+        console.log(audi);
         //console.log(e.keyCode);
+        if (!audi) return;
+        audi.currentTime = 0;
+        audi.play();
+        key.classList.add('playing');
         });
         
-        
+         
         </script>
 </body>
-</html>
+</ht4fml>

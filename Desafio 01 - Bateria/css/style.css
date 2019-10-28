@@ -23,7 +23,7 @@ body{
     align-items: center;
 }
 
-.botao{
+.key{
     color: whitesmoke;
     background-color: rgba(63, 2, 2, 0.849);
     width: 80px;
@@ -32,6 +32,7 @@ body{
     margin: 10px;
     padding: 10px;
     padding-bottom: 20px;
+    transition: all 1.7s;
     text-shadow: 0 0 5px black;
     text-align: center;
     display: flex;
@@ -39,7 +40,7 @@ body{
     justify-content: center; 
 }
 
-.botao > kbd{
+.key > kbd{
     color: white;
     font-size: 1.7cm;
     padding-left: 5px;
@@ -50,3 +51,9 @@ body{
     font-size: 0.5cm;
     padding-bottom: 5px;
 }
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
