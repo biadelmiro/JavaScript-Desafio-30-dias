@@ -4,16 +4,22 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+a{
+
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 .back{
     background-size: cover;
     width: 100%;
     height: 100%;
     position: fixed;
-    background: no-repeat url('../img/img2.jpg') center / cover fixed;
+    background: no-repeat url('../img/img6.jpg') center / cover fixed;
 }
 
 .tudo{
-    width: 80%;
+    width: 90%;
     height: 80%;
     margin: 0 auto;
     margin-top: 40px;
@@ -25,14 +31,14 @@ body{
 
 .key{
     color: whitesmoke;
-    background-color: rgba(63, 2, 2, 0.678);
-    width: 80px;
-    height: 80px;
-    border-radius: 3px;
+    background-color: rgba(99, 0, 86, 0.781);
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
     margin: 10px;
     padding: 10px;
     padding-bottom: 20px;
-    transition: all 0.7s;
+    transition: all .07s;
     text-shadow: 0 0 5px black;
     text-align: center;
     display: flex;
@@ -53,7 +59,19 @@ body{
 }
 
 .playing {
-    transform: scale(1.1);
-    border-color: #ffc600;
-    box-shadow: 0 0 3rem #ffc600;
+    transform: scale(0.9);
+   border: 4px solid rgba(255, 230, 7, 0.712);
   }
+
+.bea{
+    color: whitesmoke;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.bea:hover{
+    transform: scale(1.1);
+    text-shadow: 0 0 5px black;
+}
