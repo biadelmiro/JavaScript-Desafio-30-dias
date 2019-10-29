@@ -62,8 +62,8 @@
         <script>
         window.addEventListener('keydown', function(e){
 
-        var audi = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        var key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+        const audi = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
         console.log(audi);
         //console.log(e.keyCode);
         if (!audi) return;
@@ -72,6 +72,13 @@
         key.classList.add('playing');
         });
         
+        function removeTransition(e){
+            if (e.propertyName !== 'transform') return;
+            console.log(this);
+        }
+
+        const keys = document.querySelectorAll('.key');
+        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
          
         </script>
 </body>
