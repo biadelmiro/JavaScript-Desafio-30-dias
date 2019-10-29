@@ -25,14 +25,14 @@ body{
 
 .key{
     color: whitesmoke;
-    background-color: rgba(63, 2, 2, 0.849);
+    background-color: rgba(63, 2, 2, 0.678);
     width: 80px;
     height: 80px;
     border-radius: 3px;
     margin: 10px;
     padding: 10px;
     padding-bottom: 20px;
-    transition: all 1.7s;
+    transition: all 0.7s;
     text-shadow: 0 0 5px black;
     text-align: center;
     display: flex;
@@ -55,5 +55,5 @@ body{
 .playing {
     transform: scale(1.1);
     border-color: #ffc600;
-    box-shadow: 0 0 1rem #ffc600;
+    box-shadow: 0 0 3rem #ffc600;
   }
