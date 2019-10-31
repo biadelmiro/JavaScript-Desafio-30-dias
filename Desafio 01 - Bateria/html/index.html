@@ -36,15 +36,15 @@
             <span class="sound">HIDE</span>
         </div>
         <div data-key="74" class="key">
-            <kbd >I</kbd>
+            <kbd >J</kbd>
             <span class="sound">SNARE</span>
         </div>
         <div data-key="75" class="key">
-            <kbd >J  </kbd>
+            <kbd >K  </kbd>
             <span class="sound">  TOM</span>
         </div>
         <div data-key="76" class="key">
-            <kbd >K</kbd>
+            <kbd >L</kbd>
             <span class="sound">TINK</span>
         </div>
         </div>
@@ -65,11 +65,10 @@
 
         <script>
         window.addEventListener('keydown', function(e){
-
         const audi = document.querySelector(`audio[data-key="${e.keyCode}"]`);
         const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
         console.log(audi);
-        //console.log(e.keyCode);
+
         if (!audi) return;
         audi.currentTime = 0;
         audi.play();

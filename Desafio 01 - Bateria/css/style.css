@@ -5,7 +5,6 @@ body{
 }
 
 a{
-
     color: whitesmoke;
     text-decoration: none;
 }
@@ -38,7 +37,7 @@ a{
     margin: 10px;
     padding: 10px;
     padding-bottom: 20px;
-    transition: all .07s;
+    transition: all .05s;
     text-shadow: 0 0 5px black;
     text-align: center;
     display: flex;
