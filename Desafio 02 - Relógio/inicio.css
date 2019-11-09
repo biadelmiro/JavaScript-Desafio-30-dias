@@ -9,7 +9,7 @@ body{
     width: 100%;
     height: 100%;
     position: fixed;
-    background: no-repeat url('../img/img2.jpg') center / cover fixed;
+    background-image: no-repeat url('./img/Synthwave-Neon-80s-Background-4K.jpg') center / cover fixed;
 }
 
 .tudo{
