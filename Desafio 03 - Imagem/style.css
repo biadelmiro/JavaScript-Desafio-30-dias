@@ -1,0 +1,21 @@
+body{
+    background-color: teal;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:'helvetica neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.all{
+    width: 700px;
+    height: 500px;
+    background-color: tomato;
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
