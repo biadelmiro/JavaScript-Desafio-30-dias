@@ -1,21 +1,70 @@
+:root{
+    --spacing: 10px;
+    --blur: 10px;
+    --base: #800a68;
+}
+
 body{
-    background-color: teal;
+    background-color: #4e0f41;
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family:'helvetica neue', sans-serif;
     display: flex;
     justify-content: center;
-    
+    color: white;
+   
+}
+
+h2{
+    font-size: 2.5em;
+    text-shadow:10px 10px 30px black;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 10em;
+    height: 3px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    outline: none;
+}
+
+input[type=color] {
+    border: none;
+    width: 5em;
+    height: 15px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .all{
-    width: 700px;
-    height: 500px;
-    background-color: tomato;
+    width: 900px;
+    height: 100%;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
+    text-shadow:10px 10px 30px black;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.controls{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.h1{
+    color: var(--base);
+}
+
+img{
+    margin-top: 30px;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
 }
