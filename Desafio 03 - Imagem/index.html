@@ -26,8 +26,15 @@
         </div>
     </div>
     <script>
+        const inputs = document.querySelectorAll('.controls input');
 
-        
+        function handleupdate(){
+            const suffix = this.dataset.sizing || '';
+            console.log(this.dataset);
+        }
+
+        inputs.forEach(input => input.addEventListener('change', handleupdate));
+        inputs.forEach(input => input.addEventListener('mousemove', handleupdate));
     </script>
 </body>
 </html>
